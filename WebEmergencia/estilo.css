@@ -1,0 +1,24 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el header */
+.header {
+    background-image: linear-gradient(to bottom, #49a3de9a, #809799);
+    color: white; 
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.header h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    letter-spacing: 5px; /* Separación entre las letras */
+}
+
+
+
+
