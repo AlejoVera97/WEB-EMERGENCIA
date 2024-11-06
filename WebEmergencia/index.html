@@ -7,6 +7,9 @@
     <!-- Vinculo css-->
     <link rel="stylesheet" href="estilo.css">
 
+    <!-- Libreria para iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!--Etiquetas metas-->
     <meta name="description" content="DANA Valencia">
     <meta name="keywords" content="DANA,Valencia,Inundaciones,Ayuda,Soliraridad">
@@ -17,37 +20,39 @@
 <body>
     <!--Header-->
     <header class="header">
+        <img class="header__logo" src="/WebEmergencia/img/Catastrofes/Logo/Logo.png" alt="logoPeopleHelp">
         <h1> HELP PEOPLE </h1>
-        <nav>
+        <nav class="header__nav">
             <ul>
-                <il> <button> Ayuda </button></il>
-                <il> <button> Donaciones </button></il>
-                <il>  <button> Contactos</button></il>
-                <il> <button> Preguntas </button></il>
+                <il> <button  class="header__button"> Ayuda </button></il>
+                <il> <button  class="header__button"> Donaciones </button></il>
+                <il>  <button class="header__button"> Contactos</button></il>
+                <il> <button  class="header__button"> Preguntas </button></il>
             </ul>
         </nav>
     </header>
 
+
+
     <!--Main-->
     <main class="main">
         <section class="tsunami">
-            <h2> Tsunami en Japon</h2>
-            <img  src="/WebEmergencia/img/Catastrofes/tsunami.jpg" alt="tsunamiJapon">
-           
+            <button class="section__button"> Tsunami en Japon</button>
+            <img  src="/WebEmergencia/img/Catastrofes/tsunami.jpg" alt="tsunamiJapon">   
         </section>
 
         <section class="terremoto">
-            <h2> Terremoto en Turquia </h2>
+            <button class="section__button"> Terremoto en Turquia</button>
             <img src="/WebEmergencia/img/Catastrofes/terremoto.jpg" alt="terremotoTurquia">
         </section>
 
         <section class="indencio">
-            <h2> Incendios en Amazonas</h2>
+            <button class="section__button"> Incencios en Amazonas</button>
             <img src="/WebEmergencia/img/Catastrofes/incendio.jpg" alt="incendioAmazonas">
         </section>
 
         <section class="tornado">
-            <h2> Tornados en Florida </h2>
+            <button class="section__button"> Tornados en EEUU</button>
             <img src="/WebEmergencia/img/Catastrofes/tornado.jpeg" alt="tornadoflorida">
 
         </section>
@@ -57,16 +62,25 @@
     <!--footer-->
     <footer class="footer">
         <div class="info">
-
+            <h3>Sobre Nosotros</h3>
+            <p>Somos una organización dedicada a brindar ayuda en emergencias a nivel mundial. Nuestro objetivo es salvar vidas y ayudar a las comunidades afectadas.</p>
         </div>
+    
         <div class="contactos">
-
+            <h3>Contáctanos</h3>
+            <p>Email: ayuda@emergencia.org</p>
+            <p>Teléfono: +1 234 567 890</p>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
         </div>
+    
         <div class="redes">
-
+            <h3>Síguenos</h3>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
         </div>
-        
-
     </footer>
+    
+    
 </body>
 </html>
