@@ -5,7 +5,11 @@
     box-sizing: border-box;
 }
 
-/* Estilos para el header */
+
+/* ------------------------------------------------------------------ */
+
+
+/* Header */
 .header {
     display: flex;
     align-items: center;
@@ -29,17 +33,17 @@
 
 .header__nav ul{
     list-style: none;
-    gap: 0,1;
+ 
 }
 
 .header__button {
-    background-color: #356697;
-    color: #fff;
-    border: 1px solid black;
-    padding:10px;
+    background-color: #162f47;
+    color: #ffffff;
+    border: 1px solid rgb(249, 247, 247);
+    padding:5px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .header__button:hover {
@@ -47,9 +51,9 @@
 }
 
 
+/* ------------------------------------------------------------------ */
+/* INDEX  main */ 
 
-
-/* main */
 .main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -100,11 +104,27 @@
     height: 100%;
     border-radius: 5px;
 }
+/* ------------------------------------------------------------------ */
+/* Emergencia MAIN */
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño de las columnas */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.galeria img {
+    width: 100%; /* Las imágenes ocupan el 100% del espacio disponible */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para darle estilo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+}
 
 
 
-
-
+/* ------------------------------------------------------------------ */
 
 
 /* footer */
@@ -139,11 +159,7 @@
 }
 
 
-
-
-
-
-
+        
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -169,6 +185,11 @@
         grid-template-columns: 1fr;
         padding: 1rem;
         gap: 1rem;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas móviles */
+        gap: 8px;
     }
 
     /* Footer */
