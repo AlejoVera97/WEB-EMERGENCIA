@@ -42,12 +42,54 @@
     <main class="main">
         <section class="galeria">
             <img src="img/Catastrofes/Dana/coches-dana.jpg" alt="dana">
-            <img src="img/Catastrofes/Dana/dana.jpg" alt="dana1">
-            <img src="img/Catastrofes/Dana/descarga.png" alt="dana2">
+
+        </section>
+
+        <section class="informacion">
+            <p class="main__info"> Desde la Asociación Española de Fundaciones, queremos expresar
+                nuestra solidaridad y apoyo a todas las personas afectadas por la DANA que ha golpeado
+                a distintas comunidades autónomas, en especial a la Comunitat Valenciana.
+            </p>
+            <img class="main__info__img" src="img/Catastrofes/Dana/descarga.png" alt="dana2">
+        </section>
+
+
+        <section class="donacion">
+            <h2>Formulario de Donación</h2>
+            <form action="procesar_donacion.html" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="monto">Monto de Donación ($):</label>
+                <input type="number" id="monto" name="monto" min="1" required>
+
+                <label for="mensaje">Mensaje (opcional):</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe un mensaje..."></textarea>
+
+                <button type="submit" class="donacion__button">Donar Ahora</button>
+            </form>
         </section>
 
     </main>
 
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer_info">
+            <h3>Sobre Nosotros</h3>
+            <p>Somos una organización dedicada a brindar ayuda en emergencias a nivel mundial. 
+                Nuestro objetivo es salvar vidas y ayudar a las comunidades afectadas.</p>
+        </div>
+    
+        <div class="footer__redes">
+            <h3>Nuestras redes: </h3>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> </a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> </a>
+        </div>
+    </footer>
 
 </body>
 

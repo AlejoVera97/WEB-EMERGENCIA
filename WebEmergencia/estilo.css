@@ -15,15 +15,15 @@
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, hsla(204, 69%, 58%, 0.604), #809799);
-    color: white; 
+    color: white;
     text-align: center;
     padding: 30px;
 }
 
 .header h1 {
     font-size: 40px;
-    margin-bottom: 10px; 
-    letter-spacing: 5px; 
+    margin-bottom: 10px;
+    letter-spacing: 5px;
 }
 
 .header__logo {
@@ -31,16 +31,16 @@
     height: auto;
 }
 
-.header__nav ul{
+.header__nav ul {
     list-style: none;
- 
+
 }
 
 .header__button {
     background-color: #162f47;
     color: #ffffff;
     border: 1px solid rgb(249, 247, 247);
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 13px;
@@ -52,7 +52,7 @@
 
 
 /* ------------------------------------------------------------------ */
-/* INDEX  main */ 
+/* INDEX  main */
 
 .main {
     display: grid;
@@ -71,7 +71,7 @@
     text-align: center;
     height: 300px;
     display: flex;
-    
+
 }
 
 .main section:hover {
@@ -92,7 +92,7 @@
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
-  
+
 }
 
 .section__button:hover {
@@ -104,23 +104,83 @@
     height: 100%;
     border-radius: 5px;
 }
+
 /* ------------------------------------------------------------------ */
 /* Emergencia MAIN */
 
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño de las columnas */
-    gap: 15px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Ajusta el tamaño de las columnas */
+    gap: 15px;
+    /* Espacio entre las imágenes */
 }
 
 .galeria img {
-    width: 100%; /* Las imágenes ocupan el 100% del espacio disponible */
+    width: 100%;
+    /* Las imágenes ocupan el 100% del espacio disponible */
     height: auto;
-    border-radius: 8px; /* Bordes redondeados para darle estilo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    object-fit: cover; /* Recorta la imagen si es necesario */
+    border-radius: 8px;
+    /* Bordes redondeados para darle estilo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidad */
+    object-fit: cover;
+    /* Recorta la imagen si es necesario */
 }
+
+.donacion {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, hsla(204, 69%, 58%, 0.604), #809799);
+    border: 1px solid black;
+}
+
+.donacion h2 {
+    text-align: center;
+    color: #333;
+}
+
+.donacion label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.donacion input[type="text"],
+.donacion input[type="email"],
+.donacion input[type="number"],
+.donacion textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.donacion__button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donacion__button:hover {
+    background-color: #0056b3;
+}
+
 
 
 
@@ -134,7 +194,7 @@
     align-items: center;
     padding: 2rem;
     background-image: linear-gradient(to bottom, hsla(204, 69%, 58%, 0.604), #809799);
-    color: white; 
+    color: white;
     text-align: center;
 }
 
@@ -150,19 +210,20 @@
 }
 
 .footer p {
-    margin: 0.5rem ;
+    margin: 0.5rem;
     color: #070707;
 }
 
-.footer__info{
+.footer__info {
     font-size: 1em;
 }
 
 
-        
+
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
+
     /* Header */
     .header {
         flex-direction: column;
@@ -188,8 +249,32 @@
     }
 
     .galeria {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas móviles */
-        gap: 8px;
+        grid-template-columns: 1fr;
+    }
+
+
+    .donacion {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .donacion h2 {
+        font-size: 20px;
+    }
+
+
+    .donacion input[type="text"],
+    .donacion input[type="email"],
+    .donacion input[type="number"],
+
+    .donacion textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .donacion__button {
+        font-size: 14px;
+        padding: 10px;
     }
 
     /* Footer */
@@ -207,6 +292,3 @@
         justify-content: center;
     }
 }
-
-
-
