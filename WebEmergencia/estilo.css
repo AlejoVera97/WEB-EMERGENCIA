@@ -108,25 +108,35 @@
 /* ------------------------------------------------------------------ */
 /* Emergencia MAIN */
 
+.main__emergencia {
+    padding: 20px;
+}
+.main__info {
+    max-width: 600px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.main__info__img {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* Ajusta el tamaño de las columnas */
     gap: 15px;
-    /* Espacio entre las imágenes */
+
 }
 
 .galeria img {
     width: 100%;
-    /* Las imágenes ocupan el 100% del espacio disponible */
     height: auto;
     border-radius: 8px;
-    /* Bordes redondeados para darle estilo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para dar profundidad */
     object-fit: cover;
-    /* Recorta la imagen si es necesario */
+
 }
 
 .donacion {
@@ -277,6 +287,27 @@
         padding: 10px;
     }
 
+    .main__info {
+        font-size: 14px;
+    }
+
+    .donacion h2 {
+        font-size: 20px;
+    }
+
+    .donacion__button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .donacion input[type="text"],
+    .donacion input[type="email"],
+    .donacion input[type="number"],
+    .donacion textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
     /* Footer */
     .footer {
         flex-direction: column;
@@ -292,3 +323,5 @@
         justify-content: center;
     }
 }
+
+
