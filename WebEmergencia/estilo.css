@@ -111,11 +111,14 @@
 .main__emergencia {
     padding: 20px;
 }
+
 .main__info {
     max-width: 600px;
     margin-bottom: 20px;
-    color: #333;
+    color: #070707;
     font-size: 16px;
+    text-align: justify;
+    font-family:  'Times New Roman'
 }
 
 .main__info__img {
@@ -191,6 +194,12 @@
     background-color: #0056b3;
 }
 
+.mapa iframe {
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar el tamaño máximo */
+    height: 450px;
+    border: 0;
+}
 
 
 /* ------------------------------------------------------------------ */
@@ -206,6 +215,12 @@
     color: white;
     text-align: center;
 }
+.footer__redes a {
+    margin-right: 20px; 
+    text-decoration: none;
+    color: inherit; /* Para mantener el color original de los iconos */
+}
+
 
 .footer div {
     flex: 1;
@@ -230,6 +245,12 @@
 
 
 
+
+
+
+/* ------------------------------------------------------------------ */
+
+
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
 
@@ -251,13 +272,14 @@
     }
 
     /* Main */
-    .main {
+    .main .main__emergencia .main__info {
         grid-template-columns: 1fr;
         padding: 1rem;
         gap: 1rem;
     }
 
-    .galeria {
+    .main__info__img .galeria {
+
         grid-template-columns: 1fr;
     }
 
@@ -322,5 +344,3 @@
         justify-content: center;
     }
 }
-
-
